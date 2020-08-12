@@ -1,13 +1,14 @@
 ﻿(function () {
     'use strict';
 
-    function controller(domainResource, notificationsService, overlayService, localizationService, eventsService) {
+    function controller($location, domainResource, notificationsService, overlayService, localizationService, eventsService) {
 
         var vm = this;
         vm.page = {};
         vm.domains = [];
 
         vm.deleteDomain = deleteDomain;
+        vm.addDomain = addDomain;
         vm.navigate = navigate;
         
         init();
@@ -17,6 +18,11 @@
 
             setPageName();
             loadDomains();
+        }
+
+        function addDomain() {
+            $location.search('create', null);
+            $location.path("/settings/domains/edit/-1").search("create", "true");
         }
 
         function deleteDomain(domain, event) {

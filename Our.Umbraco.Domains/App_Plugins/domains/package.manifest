@@ -5,6 +5,7 @@
 
     //Controllers 
     "~/App_Plugins/domains/backoffice/domains/dashboard.controller.js",
+    "~/App_Plugins/domains/backoffice/domains/edit.controller.js",
 
     //Resources
     "~/App_Plugins/domains/resources/domain.resource.js"

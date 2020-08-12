@@ -266,6 +266,8 @@
   <ItemGroup>
     <Content Include="App_Plugins\domains\backoffice\domains\dashboard.controller.js" />
     <Content Include="App_Plugins\domains\backoffice\domains\dashboard.html" />
+    <Content Include="App_Plugins\domains\backoffice\domains\edit.controller.js" />
+    <Content Include="App_Plugins\domains\backoffice\domains\edit.html" />
     <Content Include="App_Plugins\domains\backoffice\domains\overlays\delete.html" />
     <Content Include="App_Plugins\domains\lang\en-US.xml" />
     <Content Include="App_Plugins\domains\resources\domain.resource.js" />
