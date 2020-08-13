@@ -9,6 +9,7 @@
     <key alias="domains">Domains</key>
     <key alias="node">Node</key>
     <key alias="culture">Culture</key>
+    <key alias="addDomain">Add domain</key>
   </area>
   <area alias="messages">
     <key alias="domainDeleteWarning">This will delete the domain</key>

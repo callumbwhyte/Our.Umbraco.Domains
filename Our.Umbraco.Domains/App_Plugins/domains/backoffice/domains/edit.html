@@ -18,7 +18,21 @@
 
                 <umb-load-indicator ng-if="vm.loading"></umb-load-indicator>
 
-                
+                <umb-box ng-if="!vm.loading">
+                    <umb-box-content>
+                        <umb-control-group label="@general_language" ng-if="vm.availableLanguages">
+                            <select name="newLang"
+                                    class="input-block-level"
+                                    ng-model="vm.domain.language"
+                                    ng-options="language as language.name for language in vm.availableLanguages"
+                                    val-server-field="IsoCode"
+                                    required></select>
+                        </umb-control-group>
+                        
+
+                    </umb-box-content>
+                </umb-box>
+
             </umb-editor-container>
 
             <umb-editor-footer>
